@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request
-import numpy as np
 import joblib
-
+import numpy as np
+np.__version__ = '1.24.4' 
 app = Flask(__name__)
 
 model = joblib.load('heart_model.pkl')  
